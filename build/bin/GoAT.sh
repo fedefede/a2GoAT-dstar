@@ -1,0 +1,1 @@
+/home/fede/a2GoAT-dstar/scripts/GoAT.sh

@@ -1,0 +1,14 @@
+/home/fede/a2GoAT-dstar/build/CMakeFiles/rebuild_cache.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/edit_cache.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/link_GoATNode.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/link_GoAT.sh.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/dstarMC.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/ghist.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/goat.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/link_NewPhysics.sh.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/link_GoATSubmit.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/TaggEff.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/link_GoATFarm.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/goatbase.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/pi0-example.dir
+/home/fede/a2GoAT-dstar/build/CMakeFiles/prova_dstar.dir

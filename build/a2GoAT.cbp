@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a2GoAT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_GoATNode">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 link_GoATNode"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_GoAT.sh">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 link_GoAT.sh"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dstarMC">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/dstarMC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 dstarMC"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dstarMC/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/dstarMC" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 dstarMC/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ghist">
+				<Option output="/home/fede/a2GoAT-dstar/build/lib/libghist.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 ghist"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ghist/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/lib/libghist.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 ghist/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goat">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/goat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 goat"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goat/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/goat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 goat/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_NewPhysics.sh">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 link_NewPhysics.sh"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_GoATSubmit">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 link_GoATSubmit"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TaggEff">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/TaggEff" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 TaggEff"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TaggEff/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/TaggEff" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 TaggEff/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_GoATFarm">
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 link_GoATFarm"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goatbase">
+				<Option output="/home/fede/a2GoAT-dstar/build/lib/libgoatbase.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 goatbase"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goatbase/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/lib/libgoatbase.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 goatbase/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pi0-example">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/pi0-example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 pi0-example"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pi0-example/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/pi0-example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 pi0-example/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="prova_dstar">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/prova_dstar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 prova_dstar"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="prova_dstar/fast">
+				<Option output="/home/fede/a2GoAT-dstar/build/bin/prova_dstar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fede/a2GoAT-dstar/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/fede/root/include"/>
+					<Add directory="/home/fede/a2GoAT-dstar/inc"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 prova_dstar/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/fede/a2GoAT-dstar/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GConfigFile.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GDataChecks.h">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GH1.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistBGSub.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistBGSub2.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistBGSub3.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistManager.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistScaCor.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistScaCor2.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistScaCor3.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistTaggerBinning.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GHistTaggerBinning2.h">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GMesonReconstruction.h">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GParticleReconstruction.h">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GSort.h">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTree.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeA2Geant.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeDetectorHits.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeEventParameters.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeLinPol.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeManager.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeMeson.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreePairSpec.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeParticle.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeScaler.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeSetupParameters.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeTagger.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeTrack.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GTreeTrigger.h">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/GoAT.h">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/PPhysics.h">
+			<Option target="dstarMC"/>
+			<Option target="TaggEff"/>
+			<Option target="pi0-example"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/PPi0Example.h">
+			<Option target="pi0-example"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/PTaggEff.h">
+			<Option target="TaggEff"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/dstarMC.h">
+			<Option target="dstarMC"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/inc/prova_dstar.h">
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GConfigFile.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GDataChecks.cc">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistBGSub.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistBGSub2.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistBGSub3.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistManager.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistScaCor.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistScaCor2.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistScaCor3.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistTaggerBinning.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GHistTaggerBinning2.cc">
+			<Option target="dstarMC"/>
+			<Option target="ghist"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GMesonReconstruction.cc">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GParticleReconstruction.cc">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GSort.cc">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTree.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeA2Geant.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeDetectorHits.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeEventParameters.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeLinPol.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeManager.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeMeson.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreePairSpec.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeParticle.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeScaler.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeSetupParameters.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeTagger.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeTrack.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GTreeTrigger.cc">
+			<Option target="dstarMC"/>
+			<Option target="goatbase"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/GoAT.cc">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/PPhysics.cc">
+			<Option target="dstarMC"/>
+			<Option target="TaggEff"/>
+			<Option target="pi0-example"/>
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/PPi0Example.cc">
+			<Option target="pi0-example"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/PTaggEff.cc">
+			<Option target="TaggEff"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/TaggEff_main.cc">
+			<Option target="TaggEff"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/dstarMC.cc">
+			<Option target="dstarMC"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/dstarMC_main.cc">
+			<Option target="dstarMC"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/goat_main.cc">
+			<Option target="goat"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/pi0_example_main.cc">
+			<Option target="pi0-example"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/prova_dstar.cc">
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/src/prova_dstar_main.cc">
+			<Option target="prova_dstar"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/cmake/doxygen.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/cmake/settings.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/cmake/Modules/FindROOT.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="/home/fede/a2GoAT-dstar/cmake/Modules/FindROOTHelpers.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
