@@ -33,19 +33,18 @@ prova_dstar::prova_dstar()
     theta_charged   = new GH1 ("theta_charged", "theta_charged",    180,    0,  180);
     theta_neutral   = new GH1 ("theta_neutral", "theta_neutral",    180,    0,  180);
 
-    MM   = new GH1 ("MM", "MM",    200,    -2000,  2000);
-    MM_hel0   = new GH1 ("MM_hel0", "MM_hel0",    200,    -2000,  2000);
-    MM_hel1   = new GH1 ("MM_hel1", "MM_hel1",    200,    -2000,  2000);
-    MM_copl   = new GH1 ("MM_copl", "MM_copl",    200,    -2000,  2000);
-    MM_copl_hel0   = new GH1 ("MM_copl_hel0", "MM_copl_hel0",    200,    -2000,  2000);
-    MM_copl_hel1   = new GH1 ("MM_copl_hel1", "MM_copl_hel1",    200,    -2000,  2000);
-
-    MM_1track   = new GH1 ("MM_1track", "MM_1track",    200,    -2000,  2000);
-    MM_1track_hel0   = new GH1 ("MM_1track_hel0", "MM_1track_hel0",    200,    -2000,  2000);
-    MM_1track_hel1   = new GH1 ("MM_1track_hel1", "MM_1track_hel1",    200,    -2000,  2000);
-    MM_1track_copl   = new GH1 ("MM_1track_copl", "MM_1track_copl",    200,    -2000,  2000);
-    MM_1track_copl_hel0   = new GH1 ("MM_1track_copl_hel0", "MM_1track_copl_hel0",    200,    -2000,  2000);
-    MM_1track_copl_hel1   = new GH1 ("MM_1track_copl_hel1", "MM_1track_copl_hel1",    200,    -2000,  2000);
+    MM0   = new GH1 ("MM0", "MM0",    200,    -2000,  2000);
+    MM1   = new GH1 ("MM1", "MM1",    200,    -2000,  2000);
+    MM0_hel0   = new GH1 ("MM0_hel0", "MM0_hel0",    200,    -2000,  2000);
+    MM1_hel0   = new GH1 ("MM1_hel0", "MM1_hel0",    200,    -2000,  2000);
+    MM0_hel1   = new GH1 ("MM0_hel1", "MM0_hel1",    200,    -2000,  2000);
+    MM1_hel1   = new GH1 ("MM1_hel1", "MM1_hel1",    200,    -2000,  2000);
+    MM0_copl   = new GH1 ("MM0_copl", "MM0_copl",    200,    -2000,  2000);
+    MM1_copl   = new GH1 ("MM1_copl", "MM1_copl",    200,    -2000,  2000);
+    MM0_copl_hel0   = new GH1 ("MM0_copl_hel0", "MM0_copl_hel0",    200,    -2000,  2000);
+    MM1_copl_hel0   = new GH1 ("MM1_copl_hel0", "MM1_copl_hel0",    200,    -2000,  2000);
+    MM0_copl_hel1   = new GH1 ("MM0_copl_hel1", "MM0_copl_hel1",    200,    -2000,  2000);
+    MM1_copl_hel1   = new GH1 ("MM1_copl_hel1", "MM1_copl_hel1",    200,    -2000,  2000);
 
     TaggerChannel_copl    = new GH1 ("TaggerChannel_copl", "TaggerChannel_copl",  352, 0,   352);
     TaggerChannel_hel0_copl    = new GH1 ("TaggerChannel_hel0_copl", "TaggerChannel_hel0_copl",  352, 0,   352);
@@ -269,7 +268,8 @@ void	prova_dstar::ProcessEvent()
                     if(i==0)
                     {
                         Fillcoplanarity(j, coplanarity, kTRUE);
-                        FillMissingMasstrack(0, 1, j, MM, kTRUE);
+                        FillMissingMassSingleTrack(0, j, MM0, kTRUE);
+                        FillMissingMassSingleTrack(1, j, MM1, kTRUE);
                         Fill_theta_neutron_calc_measured(j, theta_neutron_calculated, diff_theta_neutron_calculated_measured, neutron_theta_calc_measured, kTRUE);
                     }
                     FillTime_track(i,j,time);
@@ -304,7 +304,8 @@ void	prova_dstar::ProcessEvent()
                         if(i==0)
                         {
                             Fillcoplanarity(j, coplanarity_cut, kTRUE);
-                            FillMissingMasstrack(0, 1, j, MM_copl, kTRUE);
+                            FillMissingMasstrack(0, 1, j, MM0_copl, kTRUE);
+                            FillMissingMasstrack(0, 1, j, MM1_copl, kTRUE);
                             Fill_theta_neutron_calc_measured(j, theta_neutron_calculated_copl, diff_theta_neutron_calculated_measured_copl, neutron_theta_calc_measured_copl, kTRUE);
                             Filldetector(detector_CB_TAPS_copl);
 
@@ -316,14 +317,16 @@ void	prova_dstar::ProcessEvent()
                             if(i==0) Fill_theta_neutron_calc_measured(j, theta_neutron_calculated_copl_hel0, diff_theta_neutron_calculated_measured_copl_hel0, neutron_theta_calc_measured_copl_hel0, kTRUE);
                             Filltheta_track(i, j, theta_hel0_copl, kTRUE);
                             FillTaggerChannel_track(i, j, TaggerChannel_hel0_copl);
-                            FillMissingMasstrack(0, 1, j, MM_copl_hel0, kTRUE);
+                            FillMissingMasstrack(0, 1, j, MM0_copl_hel0, kTRUE);
+                            FillMissingMasstrack(0, 1, j, MM1_copl_hel0, kTRUE);
                         }
                         else if (hel == 1)
                         {
                             if(i==0) Fill_theta_neutron_calc_measured(j, theta_neutron_calculated_copl_hel1, diff_theta_neutron_calculated_measured_copl_hel1, neutron_theta_calc_measured_copl_hel1, kTRUE);
                             Filltheta_track(i, j, theta_hel1_copl, kTRUE);
                             FillTaggerChannel_track(i, j, TaggerChannel_hel1_copl);
-                            FillMissingMasstrack(0, 1, j, MM_copl_hel1, kTRUE);
+                            FillMissingMasstrack(0, 1, j, MM0_copl_hel1, kTRUE);
+                            FillMissingMasstrack(0, 1, j, MM1_copl_hel1, kTRUE);
                         }
 
                         if(GetTracks()->IsCharged(i))

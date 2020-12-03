@@ -27,19 +27,18 @@ private:
     GH1*    theta_charged;
     GH1*    theta_neutral;
 
-    GH1*    MM;
-    GH1*    MM_hel0;
-    GH1*    MM_hel1;
-    GH1*    MM_copl;
-    GH1*    MM_copl_hel0;
-    GH1*    MM_copl_hel1;
-
-    GH1*    MM_1track;
-    GH1*    MM_1track_hel0;
-    GH1*    MM_1track_hel1;
-    GH1*    MM_1track_copl;
-    GH1*    MM_1track_copl_hel0;
-    GH1*    MM_1track_copl_hel1;
+    GH1*    MM0;
+    GH1*    MM1;
+    GH1*    MM0_hel0;
+    GH1*    MM1_hel0;
+    GH1*    MM0_hel1;
+    GH1*    MM1_hel1;
+    GH1*    MM0_copl;
+    GH1*    MM1_copl;
+    GH1*    MM0_copl_hel0;
+    GH1*    MM1_copl_hel0;
+    GH1*    MM0_copl_hel1;
+    GH1*    MM1_copl_hel1;
 
     GH1*    TaggerChannel;
     GH1*    TaggerChannel_hel0;

@@ -455,26 +455,6 @@ void PPhysics::FillMissingMasstrack(Int_t particle_index1, Int_t particle_index2
 {
 //    cout << "qui entro" << endl;
     if(RejectTagged(tagger_index)) return;
-    if(GetTracks()->HasCB(particle_index1) == 0 && GetTracks()->HasTAPS(particle_index1) == 0 &&(GetTracks()->GetMWPC1Energy(particle_index1) >0))
-    {
-
-//        cout << "particle 1 has MWPC but no CB, it has TAPS " << GetTracks()->GetClusterEnergy(particle_index1) << endl;
-//        return;
-    }
-    if(GetTracks()->GetClusterEnergy(particle_index1) == 0 &&(GetTracks()->GetMWPC0Energy(particle_index1) >0 || GetTracks()->GetMWPC1Energy(particle_index1) >0))
-    {
-
-//        cout << "particle 1 has MWPC but no CLUSTER ENERGY, it has TAPS " << GetTracks()->GetClusterEnergy(particle_index1) << endl;
-//        return;
-    }
-
-    if(GetTracks()->GetClusterEnergy(particle_index2) == 0 && (GetTracks()->GetMWPC0Energy(particle_index2) >0 || GetTracks()->GetMWPC1Energy(particle_index2) >0))
-    {
-//        cout << "particle 1 has MWPC but no CB" << endl;
-//        return;
-    }
-//    cout << "good event " << GetTracks()->HasCB(particle_index1)  << endl;
-//    cout << GetTracks()->HasCB(particle_index1)<< endl;
     double mass_1 = 0;
     double mass_2 = 0;
 
@@ -504,12 +484,36 @@ void PPhysics::FillMissingMasstrack(Int_t particle_index1, Int_t particle_index2
     // Fill GH1
     if(TaggerBinning)   gHist->Fill(missingp4_track.M(),time, GetTagger()->GetTaggedChannel(tagger_index));
     else gHist->Fill(missingp4_track.M(),time);
-
-    // Fill TH1
-//    if (GHistBGSub::IsPrompt(time)) Hprompt->Fill(missingp4_track.M());
-//    if (GHistBGSub::IsRandom(time)) Hrandom->Fill(missingp4_track.M());
 }
 
+void PPhysics::FillMissingMassSingleTrack(Int_t particle_index, Int_t tagger_index, GH1* gHist, Bool_t TaggerBinning)
+{
+    if(RejectTagged(tagger_index)) return;
+    double mass = 0;
+    if(GetTracks()->IsNeutral(particle_index)==1)
+    {
+        mass = 939.565;
+    }
+    else if(GetTracks()->IsNeutral(particle_index)==0)
+    {
+        mass = 938.272;
+    }
+
+    TLorentzVector track = GetTracks()->GetVector(particle_index, mass);
+
+    // calc particle time diff
+    time = GetTagger()->GetTaggedTime(tagger_index) - GetTracks()->GetTime(particle_index);
+    beam 		= TLorentzVector(0.,0.,GetTagger()->GetTaggedEnergy(tagger_index),GetTagger()->GetTaggedEnergy(tagger_index));
+
+    // calc missing p4
+    TLorentzVector missingp4_track	= beam + target - track ;
+//    cout << "target mass: " << target.M() << endl;
+//    cout << "part1 mass: " << track1.M() << endl;
+//    cout << "part2 mass: " << track2.M() << endl;
+    // Fill GH1
+    if(TaggerBinning)   gHist->Fill(missingp4_track.M(),time, GetTagger()->GetTaggedChannel(tagger_index));
+    else gHist->Fill(missingp4_track.M(),time);
+}
 
 void PPhysics::FillTime(const GTreeParticle& tree, GH1* gHist)
 {
