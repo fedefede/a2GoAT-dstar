@@ -35,6 +35,8 @@ prova_dstar::prova_dstar()
 
     MM0   = new GH1 ("MM0", "MM0",    200,    -2000,  2000);
     MM1   = new GH1 ("MM1", "MM1",    200,    -2000,  2000);
+    MM_neutral   = new GH1 ("MM_charged", "MM_charged",    200,    -2000,  2000);
+    MM_charged   = new GH1 ("MM1", "MM1",    200,    -2000,  2000);
     MM0_hel0   = new GH1 ("MM0_hel0", "MM0_hel0",    200,    -2000,  2000);
     MM1_hel0   = new GH1 ("MM1_hel0", "MM1_hel0",    200,    -2000,  2000);
     MM0_hel1   = new GH1 ("MM0_hel1", "MM0_hel1",    200,    -2000,  2000);
@@ -270,6 +272,7 @@ void	prova_dstar::ProcessEvent()
                         Fillcoplanarity(j, coplanarity, kTRUE);
                         FillMissingMassSingleTrack(0, j, MM0, kTRUE);
                         FillMissingMassSingleTrack(1, j, MM1, kTRUE);
+                        FillMissingMasscharged_neutral(0, 1, j, MM_neutral, MM_charged, kTRUE);
                         Fill_theta_neutron_calc_measured(j, theta_neutron_calculated, diff_theta_neutron_calculated_measured, neutron_theta_calc_measured, kTRUE);
                     }
                     FillTime_track(i,j,time);

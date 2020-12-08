@@ -29,6 +29,9 @@ private:
 
     GH1*    MM0;
     GH1*    MM1;
+
+    GH1*    MM_neutral;
+    GH1*    MM_charged;
     GH1*    MM0_hel0;
     GH1*    MM1_hel0;
     GH1*    MM0_hel1;

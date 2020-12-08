@@ -485,7 +485,34 @@ void PPhysics::FillMissingMasstrack(Int_t particle_index1, Int_t particle_index2
     if(TaggerBinning)   gHist->Fill(missingp4_track.M(),time, GetTagger()->GetTaggedChannel(tagger_index));
     else gHist->Fill(missingp4_track.M(),time);
 }
+void PPhysics::FillMissingMassSingleTrack(Int_t particle_index, Int_t tagger_index, GH1* gHist, Bool_t TaggerBinning)
+{
+    if(RejectTagged(tagger_index)) return;
+    double mass = 0;
+    if(GetTracks()->IsNeutral(particle_index)==1)
+    {
+        mass = 939.565;
+    }
+    else if(GetTracks()->IsNeutral(particle_index)==0)
+    {
+        mass = 938.272;
+    }
 
+    TLorentzVector track = GetTracks()->GetVector(particle_index, mass);
+
+    // calc particle time diff
+    time = GetTagger()->GetTaggedTime(tagger_index) - GetTracks()->GetTime(particle_index);
+    beam 		= TLorentzVector(0.,0.,GetTagger()->GetTaggedEnergy(tagger_index),GetTagger()->GetTaggedEnergy(tagger_index));
+
+    // calc missing p4
+    TLorentzVector missingp4_track	= beam + target - track ;
+//    cout << "target mass: " << target.M() << endl;
+//    cout << "part1 mass: " << track1.M() << endl;
+//    cout << "part2 mass: " << track2.M() << endl;
+    // Fill GH1
+    if(TaggerBinning)   gHist->Fill(missingp4_track.M(),time, GetTagger()->GetTaggedChannel(tagger_index));
+    else gHist->Fill(missingp4_track.M(),time);
+}
 
 void PPhysics::FillMissingMasscharged_neutral(Int_t particle_index0, Int_t particle_index1, Int_t tagger_index, GH1* gHist, GH1* gHist1, Bool_t TaggerBinning)
 {
@@ -495,7 +522,7 @@ void PPhysics::FillMissingMasscharged_neutral(Int_t particle_index0, Int_t parti
     if(GetTracks()->IsNeutral(particle_index0)==1 && GetTracks()->IsNeutral(particle_index1)==0)
     {
         mass0 = 939.565;
-        mass1 = 938,272;
+        mass1 = 938.272;
         TLorentzVector track0 = GetTracks()->GetVector(particle_index0, mass0);
         TLorentzVector track1 = GetTracks()->GetVector(particle_index1, mass1);
         time = GetTagger()->GetTaggedTime(tagger_index) - GetTracks()->GetTime(particle_index0);
@@ -511,7 +538,7 @@ void PPhysics::FillMissingMasscharged_neutral(Int_t particle_index0, Int_t parti
     }
     else if(GetTracks()->IsNeutral(particle_index0)==0 && GetTracks()->IsNeutral(particle_index1)==1)
     {
-        mass0 = 938,272;
+        mass0 = 938.272;
         mass1 = 939.565;
         TLorentzVector track0 = GetTracks()->GetVector(particle_index0, mass0);
         TLorentzVector track1 = GetTracks()->GetVector(particle_index1, mass1);
