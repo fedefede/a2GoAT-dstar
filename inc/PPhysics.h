@@ -71,6 +71,7 @@ public:
 	void 	FillMissingMass(const GTreeParticle& tree, Int_t particle_index, Int_t tagger_index, GH1* gHist, Bool_t TaggerBinning = kFALSE);
     void    FillMissingMasstrack(Int_t particle_index1, Int_t particle_index2,Int_t tagger_index, GH1* gHist, Bool_t TaggerBinning = kFALSE);
     void    FillMissingMassSingleTrack(Int_t particle_index, Int_t tagger_index, GH1* gHist, Bool_t TaggerBinning = kFALSE);
+    void    FillMissingMasscharged_neutral(Int_t particle_index0, Int_t particle_index1, Int_t tagger_index, GH1* gHist, GH1* gHist1, Bool_t TaggerBinning = kFALSE);
 
     Double_t CalcMissingMass(const GTreeParticle &tree, Int_t particle_index, Int_t tagger_index);
     Double_t CalcMissingEnergy(const GTreeParticle &tree, Int_t particle_index, Int_t tagger_index);
